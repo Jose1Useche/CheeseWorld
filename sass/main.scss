@@ -1,3 +1,16 @@
+@import "base";
+@import "layout";
+
 h1 {
     color: green;
 }
+
+.open-sans {
+    font-family: 'Open Sans', sans-serif;
+    color: violet;
+}
+
+.brandon-grotesque { 
+    font-family: 'brandon-grotesque';
+    color: brown;
+} 

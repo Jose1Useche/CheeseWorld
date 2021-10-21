@@ -1,0 +1,37 @@
+//Color Variables
+
+$color-Cyan: #0084ac;
+$color-Orange: #ff6900;
+$color-Green: #7cb82f;
+$color-Black: #333333;
+$color-Dark-Gray: #888888;
+$color-Light-Gray: #b2b2b2;
+$color-white: #ffffff;
+//**************************************************************************************************
+
+//Fuentes
+
+@font-face {
+    font-family: 'brandon-grotesque';
+    src: local('Brandon Grotesque Regular'), local('Brandon-Grotesque-Regular'),
+        url('../shared/BrandonGrotesque-Regular/BrandonGrotesque-Regular.woff2') format('woff2'),
+        url('../shared/BrandonGrotesque-Regular/BrandonGrotesque-Regular.woff') format('woff'),
+        url('../shared/BrandonGrotesque-Regular/BrandonGrotesque-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+//**************************************************************************************************
+
+//Configuraciones generales
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px / 16px = 62.5% -> 1rem 
+}
+
+body {
+    background-color: $color-Black;
+
+    min-height: 100vh;
+}
+//**************************************************************************************************

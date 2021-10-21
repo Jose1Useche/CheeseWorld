@@ -1,2 +1,30 @@
+@font-face {
+  font-family: 'brandon-grotesque';
+  src: local("Brandon Grotesque Regular"), local("Brandon-Grotesque-Regular"), url("../shared/BrandonGrotesque-Regular/BrandonGrotesque-Regular.woff2") format("woff2"), url("../shared/BrandonGrotesque-Regular/BrandonGrotesque-Regular.woff") format("woff"), url("../shared/BrandonGrotesque-Regular/BrandonGrotesque-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  background-color: #333333;
+  min-height: 100vh; }
+
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: #ffffff;
+  min-height: 50rem; }
+
 h1 {
   color: green; }
+
+.open-sans {
+  font-family: 'Open Sans', sans-serif;
+  color: violet; }
+
+.brandon-grotesque {
+  font-family: 'brandon-grotesque';
+  color: brown; }
