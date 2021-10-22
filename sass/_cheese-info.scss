@@ -116,3 +116,22 @@
     margin-top: 1rem;
     width: 88%;
 }
+
+.btn__gallery {
+    text-align: center;
+    margin: auto;
+}
+
+.btn__gallery__btn {
+    background-color: $color-Orange;
+    color: $color-white;
+    font-family: 'brandon-grotesque-bold';
+    font-size: 2rem;
+    letter-spacing: .2rem;
+    border-radius: 100px;
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 6rem auto;
+    padding: .5rem 4rem;
+}

@@ -1,0 +1,13 @@
+.footer {
+    display: grid;
+    color: $color-white; 
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    align-items: center;
+    width: 60%;
+    margin: auto;
+} 
+
+.footer__title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+}
