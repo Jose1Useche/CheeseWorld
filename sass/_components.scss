@@ -1,0 +1,127 @@
+.nav-name {
+    font-family: 'brandon-grotesque-black';
+    color: $color-Green;
+    font-size: 3rem;
+    margin: auto;
+} 
+
+.user-nav {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+
+    & > * {
+        padding: 0 2rem;
+        margin: 0 2rem;
+        cursor: pointer;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__li {
+        font-size: 1.8rem;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+        margin-right: 2rem;
+    }
+}
+
+.search {
+    flex: 0 0 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__input {
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        // background-color: $color-white;
+        // border: none;
+        padding: 1rem 0rem;
+        border-radius: 100px;
+        width: 100%;
+        // margin-left: 5rem;
+
+    }
+
+    &__button {
+        border: none;
+        border-radius: 10rem;
+        background-color: $color-white;
+        margin-right: -4.5rem;
+        z-index: 1;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:active {
+            transform: translateY(2px);
+        }
+    }
+
+    &__icon {
+        height: 2.5rem;
+        width: 2.5rem;
+        fill: #000;
+    }
+}
+
+.content {
+    width: 80%;
+    margin: auto;
+
+    &__headline {
+        font-family: 'brandon-grotesque-black';
+        font-size: 6.4rem;
+        color: $color-Black;
+        margin-bottom: -2rem;
+    }
+
+    &__paragraph {
+        font-family: 'brandon-grotesque';
+        font-size: 2.2rem;
+        color: $color-Black;
+        width: 65%;
+    }
+
+    &__menu {
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+
+        &__description {
+            font-size: 1.4rem;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            color: $color-Light-Gray;
+            margin-right: 1rem;
+        }
+
+        &__nav {
+            align-self: stretch;
+            display: flex;
+            align-items: center;
+            
+            & > * {
+                padding: 0 2rem;
+                margin: 0 -.5rem;
+                cursor: pointer;
+                height: 100%;
+                display: flex;
+                align-items: center;
+            }
+            
+            &__li {
+                font-size: 1.4rem;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 600;
+                color: $color-Orange;
+            }
+        }
+        
+    }
+}

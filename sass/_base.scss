@@ -6,7 +6,16 @@ $color-Green: #7cb82f;
 $color-Black: #333333;
 $color-Dark-Gray: #888888;
 $color-Light-Gray: #b2b2b2;
+
 $color-white: #ffffff;
+$color-grey-light-1: #faf9f9;
+$color-grey-light-2: #f4f2f2;
+
+//**************************************************************************************************
+
+//Ajustes de estilos
+
+$line: 1px inset $color-grey-light-2;
 //**************************************************************************************************
 
 //Fuentes
@@ -20,6 +29,26 @@ $color-white: #ffffff;
     font-weight: 400;
     font-style: normal;
   }
+
+  @font-face {
+    font-family: 'brandon-grotesque-bold';
+    src: local('Brandon Grotesque Bold'), local('Brandon-Grotesque-Bold'),
+        url('../shared/BrandonGrotesque-Bold/BrandonGrotesque-Bold.woff2') format('woff2'),
+        url('../shared/BrandonGrotesque-Bold/BrandonGrotesque-Bold.woff') format('woff'),
+        url('../shared/BrandonGrotesque-Bold/BrandonGrotesque-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'brandon-grotesque-black';
+    src: local('Brandon Grotesque Black'), local('Brandon-Grotesque-Black'),
+        url('../shared/BrandonGrotesque-Black/BrandonGrotesque-Black.woff2') format('woff2'),
+        url('../shared/BrandonGrotesque-Black/BrandonGrotesque-Black.woff') format('woff'),
+        url('../shared/BrandonGrotesque-Black/BrandonGrotesque-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
 //**************************************************************************************************
 
 //Configuraciones generales
@@ -31,7 +60,6 @@ html {
 
 body {
     background-color: $color-Black;
-
     min-height: 100vh;
 }
 //**************************************************************************************************

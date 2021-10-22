@@ -14,9 +14,42 @@
 </head>
 <body>
     <div class="container">
-        <h1>CheeseWorld!</h1>
-        <h1 class="open-sans">CheeseWorld!</h1>
-        <h1 class="brandon-grotesque">CheeseWorld!</h1>
+        <header class="header">
+            <h3 class="nav-name">CheeseWorld</h3>
+
+            <nav class="user-nav">
+                <li class="user-nav__li">Health & Wellness</li>
+                <li class="user-nav__li">Sustainability</li>
+                <li class="user-nav__li">Facts & Myths</li>
+                <li class="user-nav__li">Producers</li>
+                <li class="user-nav__li">Recipes</li>
+            </nav>
+
+            <form action="#" class="search">
+                <button class="search__button">
+                    <svg class="search__icon">
+                        <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                    </svg>
+                </button>
+                <input type="text" class="search__input">
+            </form>
+        </header>
+
+        <div class="content">
+            <h1 class="content__headline">Devoted to Cheese</h1>
+
+            <p class="content__paragraph">Learn how cheese products contribute to a well-balanced diet. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, iusto odit incididunt.</p>
+
+            <div class="content__menu">
+                <span class="content__menu__description">Learn more:</span>
+                <nav class="content__menu__nav">
+                    <li class="content__menu__nav__li">Podcasts</li>
+                    <li class="content__menu__nav__li">Stories</li>
+                </nav>
+            </div>
+            <br>
+            <hr>
+        </div>
     </div>
 </body>
 </html>
