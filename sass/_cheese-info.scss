@@ -1,0 +1,118 @@
+.gallery-container {
+    display: grid;
+    // grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-auto-rows: 35rem;
+    gap: 2rem;
+    width: 80%;
+    margin: auto;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.gallery__img-1 {
+    border: 2px solid $color-Cyan;
+    box-sizing: border-box;
+}
+
+.gallery__img-2 {
+    border: 2px solid $color-Orange; 
+    box-sizing: border-box;
+}
+
+.gallery__item {
+    box-shadow: 0 .5rem 1rem rgba($color-Black, .15);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &-1 {
+        grid-column-start: span 2;
+    }
+}
+
+.gallery__indicator-1
+ {
+    margin-top: -17.5rem;
+    margin-bottom: 15.5rem;
+    margin-left: -46.5rem;
+    background-color: $color-Cyan;
+}
+
+.gallery__indicator-2
+ {
+    margin-top: -17.5rem;
+    margin-bottom: 15.5rem;
+    margin-left: -17rem;
+    background-color: $color-Orange;
+}
+
+.gallery__indicator {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+
+    &__icon {
+        fill: $color-white;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    &__icon-name {
+        color: $color-white;
+        font-family: 'brandon-grotesque';
+        font-size: 1.5rem;
+        margin-left: .5rem;
+    }
+}
+
+.gallery__title {
+    font-size: 1.4rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: $color-Dark-Gray;
+    letter-spacing: .1rem;
+    margin-top: 1rem;
+}
+
+.gallery__line-1 {
+    color: $color-Cyan;
+    font-size: 10rem;
+    margin-top: -5rem;
+    margin-bottom: -4rem;
+}
+
+.gallery__line-2 {
+    color: $color-Orange;
+    font-size: 10rem;
+    margin-top: -5rem;
+    margin-bottom: -4rem;
+}
+
+.gallery__line {
+    color: $color-Green;
+    font-size: 10rem;
+    margin-top: -5rem;
+    margin-bottom: -4rem;
+}
+
+.gallery__information {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: $color-Black;
+    letter-spacing: .1rem;  
+    text-align: center;
+    margin-top: 2rem;
+    width: 86%;
+    font-size: 1.6rem;
+}
+
+.gallery__information-1 {
+    font-size: 2.4rem;
+    margin-top: 1rem;
+    width: 88%;
+}

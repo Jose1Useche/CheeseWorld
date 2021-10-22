@@ -131,3 +131,99 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 3rem; }
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-auto-rows: 35rem;
+  gap: 2rem;
+  width: 80%;
+  margin: auto; }
+
+.gallery__img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover; }
+
+.gallery__img-1 {
+  border: 2px solid #0084ac;
+  box-sizing: border-box; }
+
+.gallery__img-2 {
+  border: 2px solid #ff6900;
+  box-sizing: border-box; }
+
+.gallery__item {
+  box-shadow: 0 0.5rem 1rem rgba(51, 51, 51, 0.15);
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .gallery__item-1 {
+    grid-column-start: span 2; }
+
+.gallery__indicator-1 {
+  margin-top: -17.5rem;
+  margin-bottom: 15.5rem;
+  margin-left: -46.5rem;
+  background-color: #0084ac; }
+
+.gallery__indicator-2 {
+  margin-top: -17.5rem;
+  margin-bottom: 15.5rem;
+  margin-left: -17rem;
+  background-color: #ff6900; }
+
+.gallery__indicator {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem; }
+  .gallery__indicator__icon {
+    fill: #ffffff;
+    width: 2rem;
+    height: 2rem; }
+  .gallery__indicator__icon-name {
+    color: #ffffff;
+    font-family: 'brandon-grotesque';
+    font-size: 1.5rem;
+    margin-left: .5rem; }
+
+.gallery__title {
+  font-size: 1.4rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #888888;
+  letter-spacing: .1rem;
+  margin-top: 1rem; }
+
+.gallery__line-1 {
+  color: #0084ac;
+  font-size: 10rem;
+  margin-top: -5rem;
+  margin-bottom: -4rem; }
+
+.gallery__line-2 {
+  color: #ff6900;
+  font-size: 10rem;
+  margin-top: -5rem;
+  margin-bottom: -4rem; }
+
+.gallery__line {
+  color: #7cb82f;
+  font-size: 10rem;
+  margin-top: -5rem;
+  margin-bottom: -4rem; }
+
+.gallery__information {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: #333333;
+  letter-spacing: .1rem;
+  text-align: center;
+  margin-top: 2rem;
+  width: 86%;
+  font-size: 1.6rem; }
+
+.gallery__information-1 {
+  font-size: 2.4rem;
+  margin-top: 1rem;
+  width: 88%; }
