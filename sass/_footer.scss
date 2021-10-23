@@ -1,13 +1,95 @@
 .footer {
     display: grid;
     color: $color-white; 
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); //repeat(2, 1fr);//
     align-items: center;
+    align-content: space-around;
     width: 60%;
     margin: auto;
+    margin-bottom: 5rem;
+    column-gap: 4rem;
 } 
 
-.footer__title {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2rem;
+.footer__a {
+    .footer__title {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2.2rem;
+        letter-spacing: .1rem;
+        font-weight: 300;
+    }
+
+    .footer__line {
+        border-top: .2rem solid $color-white;
+        max-width: 5rem;
+        padding: 0;
+        margin: -1rem 0 2rem 0;
+    }
+
+    .footer__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        row-gap: 2.5rem;
+    }
 }
+
+.footer__options,
+.footer__b > .footer__title,
+.footer__copyright {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+}
+
+.footer__b {
+    
+    .footer__title {
+        margin-left: 10rem;
+
+        span {
+            margin-left: 14rem;
+        }
+    }
+
+    .footer__items {
+        display: flex;
+        align-items: center;
+        margin-left: 2rem;
+
+        .footer__options {
+            margin-left: 3rem;
+
+            svg {
+                fill: $color-white;
+                width: 3rem;
+                height: 3rem;
+            }
+
+            .footer__svg-last {
+                width: 2.2rem;
+                height: 2.2rem;
+            }
+        }
+
+        .footer__btn {
+            margin-left: 4rem;
+
+            button {
+                background-color: $color-Black;
+                color: $color-white;
+                font-family: 'brandon-grotesque-bold';
+                font-size: 2rem;
+                letter-spacing: .2rem;
+                border-radius: 100px;
+                border: 2px solid $color-white;
+                overflow: hidden;
+                cursor: pointer;
+                padding: .6rem 3.5rem;
+            }
+        }
+    }
+
+    .footer__copyright {
+        margin: 4rem 0 0 10rem;
+    }
+} 
