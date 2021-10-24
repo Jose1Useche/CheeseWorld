@@ -71,6 +71,7 @@
 .content {
     width: 80%;
     margin: auto;
+    z-index: 1;
 
     &__headline {
         font-family: 'brandon-grotesque-black';

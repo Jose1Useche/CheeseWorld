@@ -1,13 +1,18 @@
-window.onresize = mensajeVentana;
+document.onload = inicio();
+
+function inicio() {
+    window.onresize = mensajeVentana;
+}
 
 
 function mensajeVentana() {
-    if (screen.width >= 1000) {
+    if (screen.width > 1092) {
         document.getElementById("navDesktop").style.display = 'flex';
         document.getElementById("navMobile").style.display = 'none';
     } else {
         document.getElementById("navDesktop").style.display = 'none';
-        document.getElementById("navMobile").style.display = 'block';
+        document.getElementById("navMobile").style.display = 'flex';
+        document.getElementById("navMobile").style.zIndex = '2';
     }
 }
 

@@ -139,24 +139,36 @@
 @media screen and (max-width: $bp-1360) {
     .gallery__indicator-1
      {
-        margin-left: -59.5rem;
+        margin-left: -46.5rem;
+    }
+    
+    .gallery__indicator-2
+     {
+        margin-left: -17.5rem;
+    }
+}
+
+@media screen and (max-width: $bp-1092) {
+    .gallery__indicator-1
+     {
+        margin-left: -42.5rem;
+    }
+    
+    .gallery__indicator-2
+     {
+        margin-left: -15rem;
+    }
+}
+
+@media screen and (max-width: $bp-1075) {
+    .gallery__indicator-1
+     {
+        margin-left: -60rem;
     }
     
     .gallery__indicator-2
      {
         margin-left: -24rem;
-    }
-}
-
-@media screen and (max-width: $bp-1020) {
-    .gallery__indicator-1
-     {
-        margin-left: -68.2rem;
-    }
-    
-    .gallery__indicator-2
-     {
-        margin-left: -28rem;
     }
 }
 
@@ -166,16 +178,40 @@
         &-1 {
             grid-column-start: span 1;
         }
+
+        .gallery__information-1 {
+            font-size: 1.6rem;
+        }
     }
 
     .gallery__indicator-1
      {
-        margin-left: -27rem;
+        margin-left: -21rem;
     }
     
     .gallery__indicator-2
      {
-        margin-left: -27rem;
+        margin-left: -21rem;
+    }
+}
+
+@media screen and (max-width: $bp-932) {
+    .gallery__indicator-1 {
+        margin-right: -9.5rem;
+    }
+    
+    .gallery__indicator-2 {
+        margin-right: -9.5rem;
+    }
+}
+
+@media screen and (max-width: $bp-830) {
+    .gallery__indicator-1 {
+        margin-right: -13rem;
+    }
+    
+    .gallery__indicator-2 {
+        margin-right: -13rem;
     }
 }
 
@@ -208,12 +244,12 @@
 @media screen and (max-width: $bp-475) {
     .gallery__indicator-1
      {
-        margin-left: -30rem;
+        margin-left: -52rem;
     }
     
     .gallery__indicator-2
      {
-        margin-left: -30rem;
+        margin-left: -52rem;
     }
 
     .gallery__img-1 {
@@ -222,5 +258,15 @@
     
     .gallery__img-2 {
         border: 3px solid $color-Orange; 
+    }
+}
+
+@media screen and (max-width: $bp-415) {
+    .gallery__indicator-1 {
+        margin-left: -32.5rem;
+    }
+    
+    .gallery__indicator-2 {
+        margin-left: -32.5rem;
     }
 }

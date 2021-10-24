@@ -19,6 +19,9 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media screen and (max-width: 90.9375em) {
+    html {
+      font-size: 50%; } }
 
 body {
   background-color: #333333;
@@ -79,7 +82,8 @@ body {
 
 .content {
   width: 80%;
-  margin: auto; }
+  margin: auto;
+  z-index: 1; }
   .content__headline {
     font-family: 'brandon-grotesque-black';
     font-size: 6.4rem;
@@ -146,7 +150,47 @@ body {
   .header .mobileContainer {
     text-align: center;
     display: none;
-    background-color: blueviolet; }
+    align-items: center;
+    width: 100%; }
+    .header .mobileContainer .mobile__search__button {
+      border: none;
+      border-radius: 10rem;
+      background-color: #ffffff; }
+      .header .mobileContainer .mobile__search__button:focus {
+        outline: none; }
+      .header .mobileContainer .mobile__search__button:active {
+        transform: translateY(2px); }
+    .header .mobileContainer .mobile__search__icon {
+      height: 4.5rem;
+      width: 4.5rem; }
+    .header .mobileContainer #btn-menu {
+      display: none; }
+    .header .mobileContainer .respmenu {
+      margin-top: 33.5rem;
+      margin-right: -12rem; }
+      .header .mobileContainer .respmenu .container-nav-mobile {
+        margin-left: -3rem;
+        width: 200%; }
+      .header .mobileContainer .respmenu .img__barras__menu {
+        margin-left: 10rem; }
+      .header .mobileContainer .respmenu .mobileMenu {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        background-color: #333333; }
+        .header .mobileContainer .respmenu .mobileMenu li > a {
+          display: block;
+          padding: 2rem;
+          font-family: 'brandon-grotesque';
+          font-size: 2rem;
+          color: #ffffff;
+          z-index: 5; }
+    .header .mobileContainer #btn-menu:checked ~ .respmenu > .container-nav-mobile > .mobileMenu {
+      display: none; }
+    .header .mobileContainer #btn-menu:checked ~ .respmenu {
+      margin-top: -.4rem;
+      margin-right: -11.2rem;
+      margin-left: 0; }
 
 .gallery-container {
   display: grid;
@@ -263,23 +307,43 @@ body {
 
 @media screen and (max-width: 85em) {
   .gallery__indicator-1 {
-    margin-left: -59.5rem; }
+    margin-left: -46.5rem; }
+  .gallery__indicator-2 {
+    margin-left: -17.5rem; } }
+
+@media screen and (max-width: 68.25em) {
+  .gallery__indicator-1 {
+    margin-left: -42.5rem; }
+  .gallery__indicator-2 {
+    margin-left: -15rem; } }
+
+@media screen and (max-width: 67.1875em) {
+  .gallery__indicator-1 {
+    margin-left: -60rem; }
   .gallery__indicator-2 {
     margin-left: -24rem; } }
-
-@media screen and (max-width: 63.75em) {
-  .gallery__indicator-1 {
-    margin-left: -68.2rem; }
-  .gallery__indicator-2 {
-    margin-left: -28rem; } }
 
 @media screen and (max-width: 61.875em) {
   .gallery__item-1 {
     grid-column-start: span 1; }
+  .gallery__item .gallery__information-1 {
+    font-size: 1.6rem; }
   .gallery__indicator-1 {
-    margin-left: -27rem; }
+    margin-left: -21rem; }
   .gallery__indicator-2 {
-    margin-left: -27rem; } }
+    margin-left: -21rem; } }
+
+@media screen and (max-width: 58.25em) {
+  .gallery__indicator-1 {
+    margin-right: -9.5rem; }
+  .gallery__indicator-2 {
+    margin-right: -9.5rem; } }
+
+@media screen and (max-width: 51.875em) {
+  .gallery__indicator-1 {
+    margin-right: -13rem; }
+  .gallery__indicator-2 {
+    margin-right: -13rem; } }
 
 @media screen and (max-width: 58.25em) {
   .gallery__indicator-1 {
@@ -299,13 +363,19 @@ body {
 
 @media screen and (max-width: 29.6875em) {
   .gallery__indicator-1 {
-    margin-left: -30rem; }
+    margin-left: -52rem; }
   .gallery__indicator-2 {
-    margin-left: -30rem; }
+    margin-left: -52rem; }
   .gallery__img-1 {
     border: 3px solid #0084ac; }
   .gallery__img-2 {
     border: 3px solid #ff6900; } }
+
+@media screen and (max-width: 25.9375em) {
+  .gallery__indicator-1 {
+    margin-left: -32.5rem; }
+  .gallery__indicator-2 {
+    margin-left: -32.5rem; } }
 
 .footer {
   display: grid;
@@ -436,9 +506,9 @@ body {
   .footer__b .footer__title {
     margin-top: 10rem; }
   .footer__b .footer__items .media {
-    margin-top: -15rem; }
+    margin-top: -13rem; }
   .footer__b .footer__items .footer__btn {
-    margin-left: 6rem; }
+    margin-left: 10rem; }
   .footer__b .footer__copyright {
     font-size: 1.5rem; } }
 
@@ -465,3 +535,7 @@ body {
       grid-area: 1 / 2 / 2 / 3; }
     .footer__a .footer__items .footer__options9 {
       grid-area: 4 / 2 / 5 / 3; } }
+
+@media screen and (max-width: 29.6875em) {
+  .footer__a {
+    margin-left: 4rem; } }

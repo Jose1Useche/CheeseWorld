@@ -24,6 +24,70 @@
     .mobileContainer {
         text-align: center;
         display: none;
-        background-color: blueviolet;
+        align-items: center;
+        width: 100%;
+
+        .mobile__search__button {
+            border: none;
+            border-radius: 10rem;
+            background-color: $color-white;
+    
+            &:focus {
+                outline: none;
+            }
+    
+            &:active {
+                transform: translateY(2px);
+            }
+        }
+
+        .mobile__search__icon {
+            height: 4.5rem;
+            width: 4.5rem;
+        }
+
+        #btn-menu {
+            display: none;
+        }
+
+        .respmenu {
+            margin-top: 33.5rem;
+            margin-right: -12rem;
+
+            .container-nav-mobile {
+                margin-left: -3rem;
+                width: 200%;
+            }
+
+            .img__barras__menu {
+                margin-left: 10rem;
+            }
+
+            .mobileMenu {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                background-color: $color-Black;
+
+                li > a {
+                    display: block;
+                    padding: 2rem;
+                    font-family: 'brandon-grotesque';
+                    font-size: 2rem;
+                    color: $color-white;
+                    z-index: 5;
+                }
+            }
+        }
+
+        #btn-menu:checked ~ .respmenu > .container-nav-mobile > .mobileMenu {
+            display: none;
+        }
+
+        #btn-menu:checked ~ .respmenu {
+            margin-top: -.4rem;
+            margin-right: -11.2rem;
+            margin-left: 0;
+        }
     }
 }
