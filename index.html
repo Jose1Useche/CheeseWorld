@@ -10,29 +10,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
+    <script src="./JS/manipularTags.js"></script>
+
     <title>Cheese World</title>
 </head>
 <body>
     <div class="container">
         <header class="header">
-            <h3 class="nav-name">CheeseWorld</h3>
+            <div id="navDesktop" class="desktopContainer">
+                <h3 class="nav-name">CheeseWorld</h3>
+    
+                <nav class="user-nav">
+                    <li class="user-nav__li">Health & Wellness</li>
+                    <li class="user-nav__li">Sustainability</li>
+                    <li class="user-nav__li">Facts & Myths</li>
+                    <li class="user-nav__li">Producers</li>
+                    <li class="user-nav__li">Recipes</li>
+                </nav>
+    
+                <form action="#" class="search">
+                    <button id="searchBtn" type="submit" class="search__button">
+                        <svg class="search__icon">
+                            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </button>
+                    <input id="searchInput" onclick="moverLupa()" type="text" class="search__input">
+                </form>
+            </div>
 
-            <nav class="user-nav">
-                <li class="user-nav__li">Health & Wellness</li>
-                <li class="user-nav__li">Sustainability</li>
-                <li class="user-nav__li">Facts & Myths</li>
-                <li class="user-nav__li">Producers</li>
-                <li class="user-nav__li">Recipes</li>
-            </nav>
-
-            <form action="#" class="search">
-                <button class="search__button">
-                    <svg class="search__icon">
-                        <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
-                    </svg>
-                </button>
-                <input type="text" class="search__input">
-            </form>
+            <div id="navMobile" class="mobileContainer">
+                <h1>Hola Mundo</h1>
+            </div>
         </header>
 
         <div class="content">

@@ -38,20 +38,18 @@
         font-family: inherit;
         font-size: inherit;
         color: inherit;
-        // background-color: $color-white;
-        // border: none;
         padding: 1rem 0rem;
         border-radius: 100px;
         width: 100%;
-        // margin-left: 5rem;
-
     }
 
     &__button {
         border: none;
         border-radius: 10rem;
         background-color: $color-white;
-        margin-right: -4.5rem;
+        position: absolute;
+        margin-right: 23rem;
+        margin-top: .2rem;
         z-index: 1;
 
         &:focus {
