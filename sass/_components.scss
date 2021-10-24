@@ -123,3 +123,14 @@
         
     }
 }
+
+@media screen and (max-width: $bp-475) {
+    .content {
+        width: 90%;
+
+        &__paragraph {
+            font-size: 3rem;
+            width: 90%;
+        }
+    }
+}
